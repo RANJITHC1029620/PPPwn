@@ -8,7 +8,7 @@ class OffsetsFirmware_700_702:
     PPPOE_SOFTC_LIST = 0xffffffff844ad838
 
     KERNEL_MAP = 0xffffffff843c8ee0
-
+    
     SETIDT = 0xffffffff82692400
 
     KMEM_ALLOC = 0xffffffff823170f0
@@ -888,7 +888,7 @@ class OffsetsFirmware_1100:
 
     # 0xffffffff825f38ed : pop rdi ; ret
     POP_RDI_RET = 0xffffffff825f38ed
-
+    
     # 0xffffffff8224a6a9 : pop rsi ; ret
     POP_RSI_RET = 0xffffffff8224a6a9
 
@@ -933,9 +933,42 @@ class OffsetsFirmware_1100:
 
     # 0xffffffff82cb535a : add rdi, rcx ; ret
     ADD_RDI_RCX_RET = 0xffffffff82cb535a
-
+    
     # 0xffffffff8260f297 : sub rsi, rdx ; mov rax, rsi ; pop rbp ; ret
     SUB_RSI_RDX_MOV_RAX_RSI_POP_RBP_RET = 0xffffffff8260f297
-
+        
     # 0xffffffff82b84657 : jmp r14
     JMP_R14 = 0xffffffff82b84657
+    
+    # 0xffffffff82b84657 : jmp r14
+    JMP_R14 = 0xffffffff82b84657
+    
+    # 0xffffffff82cb535a : add rdi, rcx ; ret
+    ADD_RDI_RCX_RET = 0xffffffff82cb535a
+    
+    # 0xffffffff824f1299 : mov cr0, rsi ; ud2 ; mov eax, 1 ; ret
+    MOV_CR0_RSI_UD2_MOV_EAX_1_RET = 0xffffffff824f1299 
+    
+    # 0xffffffff82c75166 : push rbp ; jmp qword ptr [rsi]
+    PUSH_RBP_JMP_QWORD_PTR_RSI = 0xffffffff82c75166
+    
+    PPPOE_SOFTC_LIST = 0xffffffff84422370
+
+    KERNEL_MAP = 0xffffffff83d243e0
+
+    SETIDT = 0xffffffff82249dd0
+
+    KMEM_ALLOC = 0xffffffff8221b3f0
+    KMEM_ALLOC_PATCH1 = 0xffffffff8221b4bc
+    KMEM_ALLOC_PATCH2 = 0xffffffff8221b4c4
+    
+    # 0xffffffff825f38ed : pop rdi ; ret
+    POP_RDI_RET = 0xffffffff825f38ed
+    
+    # 0xffffffff8224a6a9 : pop rsi ; ret
+    POP_RSI_RET = 0xffffffff8224a6a9
+
+    # 0xffffffff822a4762 : pop rdx ; ret
+    POP_RDX_RET = 0xffffffff822a4762
+
+
